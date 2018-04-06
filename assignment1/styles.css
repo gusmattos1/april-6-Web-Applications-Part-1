@@ -1,0 +1,17 @@
+.text {
+  color: grey;
+}
+
+nav>ul>li> :hover {
+  color: black;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 20;
+  font-weight: bold;
+}
+
+.inline_list>li {
+  display: inline-block;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contacts</title>
+  </head>
+  <body>
+    <h1>Contacts</h1>
+    <br>
+    <a href="./">Home page</a>
+    
+    <% @contacts.each do |contact| %>
+
+      <ul>
+        <li>
+          <%= contact.first_name %>   <%= contact.last_name %>
+
+          <% if contact.email != ""%>
+              <li><%= contact.email %></li>
+          <%end%>
+          <% if contact.note != ""%>
+              <li><%= contact.note %></li>
+          <%end%>
+
+        </li>
+      </ul>
+
+    <% end %>
+  </body>
+</html>

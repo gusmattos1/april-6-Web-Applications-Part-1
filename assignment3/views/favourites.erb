@@ -1,0 +1,11 @@
+<h1>FAVOURITES</h1>
+<br>
+<a href="/home">LINK TO HOME</a>
+<a href="/portifolio">LINK TO portifolio</a>
+<br>
+
+<% @favourites.each do |site|%>
+
+<li><a href="<%=site%>"><%=site%></a></li>
+
+<%end%>

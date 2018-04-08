@@ -27,3 +27,7 @@ end
 get '/' do
   redirect to('/home')
 end
+
+get '/gallery' do
+  redirect to('/portifolio')
+end
